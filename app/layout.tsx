@@ -3,7 +3,7 @@ import './globals.css'
 import { AuthProvider } from '@/hooks/useAuth'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
+  title: 'segundo-parcial',
   description: 'Created with v0',
   generator: 'v0.dev',
 }
