@@ -24,14 +24,14 @@ export default function ProjectEditorPage() {
               >
                 ← Volver al Dashboard
               </a>
-              <a
+              {/* <a
                 href="https://github.com/yourusername/flutter-ui-designer"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm text-gray-600 hover:text-gray-900"
               >
                 GitHub
-              </a>
+              </a> */}
             </div>
           </div>
         </header>

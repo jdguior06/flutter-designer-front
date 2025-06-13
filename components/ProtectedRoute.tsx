@@ -19,15 +19,14 @@ export default function ProtectedRoute({
   const [isAuthorized, setIsAuthorized] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   
-  // Comentamos temporalmente useAuth
   const { user, loading, isAuthenticated } = useAuth();
 
   useEffect(() => {
-    // Versión temporal - simula que está autenticado
+
     setIsAuthorized(true);
     setIsLoading(false);
     
-    // Una vez que tengas useAuth funcionando, descomenta esto:
+
     if (!loading) {
       if (!isAuthenticated) {
         router.push(redirectTo);
@@ -57,7 +56,6 @@ export default function ProtectedRoute({
     );
   }
 
-  // No mostrar nada si no está autorizado (evita flash de contenido)
   if (!isAuthorized) {
     return null;
   }
